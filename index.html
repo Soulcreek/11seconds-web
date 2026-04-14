@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 Seconds — The Estimation Quiz Game</title>
+  <meta name="description" content="How close can you get in 11 seconds? Test your estimation skills in Solo, Duel, Matchmaking, and Party Mode. Available on Google Play.">
+  <meta name="theme-color" content="#0C0E11">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="11 Seconds — The Estimation Quiz Game">
+  <meta property="og:description" content="How close can you get in 11 seconds? Test your estimation skills across multiple game modes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://web.11seconds.de">
+  <meta property="og:image" content="/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- Ambient glow effects -->
+  <div class="ambient-glow ambient-glow--hero"></div>
+  <div class="ambient-glow ambient-glow--mid"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <span class="nav__logo-icon">11</span>
+        <span class="nav__logo-text">Seconds</span>
+      </a>
+      <div class="nav__links">
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#modes" class="nav__link">Game Modes</a>
+        <a href="#download" class="nav__link nav__link--cta">Get the App</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__content">
+      <div class="hero__badge" data-animate="fade-up">
+        <span class="hero__badge-dot"></span>
+        Available on Google Play
+      </div>
+      <h1 class="hero__title" data-animate="fade-up" data-delay="100">
+        How close can you get<br>
+        <span class="hero__title-accent">in 11 seconds?</span>
+      </h1>
+      <p class="hero__subtitle" data-animate="fade-up" data-delay="200">
+        The estimation quiz game that challenges your intuition.
+        Guess distances, populations, speeds, and more &mdash;
+        solo or with friends.
+      </p>
+      <div class="hero__actions" data-animate="fade-up" data-delay="300">
+        <a href="https://play.google.com/store/apps/details?id=com.elevenseconds.eleven_seconds" class="btn btn--primary" target="_blank" rel="noopener">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302-2.302 2.302-2.593-2.302 2.593-2.302zM5.864 3.469L16.8 9.8l-2.302 2.302-8.634-8.633z"/></svg>
+          Google Play
+        </a>
+        <a href="#modes" class="btn btn--ghost">
+          Explore Modes
+        </a>
+      </div>
+      <!-- Timer visualization -->
+      <div class="hero__timer" data-animate="fade-up" data-delay="400">
+        <div class="hero__timer-ring">
+          <svg viewBox="0 0 120 120" class="hero__timer-svg">
+            <circle cx="60" cy="60" r="54" class="hero__timer-track"/>
+            <circle cx="60" cy="60" r="54" class="hero__timer-progress"/>
+          </svg>
+          <span class="hero__timer-value">11</span>
+        </div>
+        <div class="hero__timer-label">seconds to answer</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="features__inner">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Why 11 Seconds</span>
+        <h2 class="section-title">Sharp instincts.<br>Quick thinking.</h2>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card" data-animate="fade-up" data-delay="0">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="feature-card__title">11-Second Timer</h3>
+          <p class="feature-card__desc">Every question has exactly 11 seconds. No more, no less. Pure pressure, pure instinct.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="80">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="feature-card__title">Estimation-Based</h3>
+          <p class="feature-card__desc">No multiple choice. Type your best guess. The closer you are, the higher your score.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="160">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="feature-card__title">ELO Ranking</h3>
+          <p class="feature-card__desc">Climb from Bronze to Grandmaster. Your skill rating reflects your true estimation ability.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="240">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="feature-card__title">8 Languages</h3>
+          <p class="feature-card__desc">Play in English, German, Spanish, French, Italian, Japanese, Korean, or Portuguese.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Modes -->
+  <section class="modes" id="modes">
+    <div class="modes__inner">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Game Modes</span>
+        <h2 class="section-title">Four ways to play.</h2>
+      </div>
+      <div class="modes__grid">
+        <div class="mode-card mode-card--solo" data-animate="fade-up" data-delay="0">
+          <div class="mode-card__number">01</div>
+          <h3 class="mode-card__title">Solo</h3>
+          <p class="mode-card__desc">Best-of-3 rounds against AI bots. Choose your category, pick your difficulty, sharpen your skills.</p>
+          <div class="mode-card__tag">Single Player</div>
+        </div>
+        <div class="mode-card mode-card--duel" data-animate="fade-up" data-delay="100">
+          <div class="mode-card__number">02</div>
+          <h3 class="mode-card__title">Duel</h3>
+          <p class="mode-card__desc">Challenge friends to async matches. Same questions, different times. Compare when both are done.</p>
+          <div class="mode-card__tag">Async Multiplayer</div>
+        </div>
+        <div class="mode-card mode-card--matchmaking" data-animate="fade-up" data-delay="200">
+          <div class="mode-card__number">03</div>
+          <h3 class="mode-card__title">Matchmaking</h3>
+          <p class="mode-card__desc">Compete against ELO-matched opponents. Win to climb the ranks, lose to sharpen your resolve.</p>
+          <div class="mode-card__tag">Competitive</div>
+        </div>
+        <div class="mode-card mode-card--party" data-animate="fade-up" data-delay="300">
+          <div class="mode-card__number">04</div>
+          <h3 class="mode-card__title">Party Mode</h3>
+          <p class="mode-card__desc">Local multiplayer for 2-5 players with AI voice hosting. The ultimate game night experience.</p>
+          <div class="mode-card__tag mode-card__tag--pro">Pro</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Download -->
+  <section class="cta" id="download">
+    <div class="cta__inner" data-animate="fade-up">
+      <div class="cta__glow"></div>
+      <span class="cta__eyebrow">Ready to play?</span>
+      <h2 class="cta__title">Download 11 Seconds</h2>
+      <p class="cta__desc">Free to play. Available on Android.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.elevenseconds.eleven_seconds" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302-2.302 2.302-2.593-2.302 2.593-2.302zM5.864 3.469L16.8 9.8l-2.302 2.302-8.634-8.633z"/></svg>
+        Get it on Google Play
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" class="nav__logo">
+            <span class="nav__logo-icon">11</span>
+            <span class="nav__logo-text">Seconds</span>
+          </a>
+          <p class="footer__tagline">The estimation quiz game.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Legal</h4>
+            <a href="/privacy.html" class="footer__link">Privacy Policy</a>
+            <a href="/impressum.html" class="footer__link">Impressum</a>
+            <a href="/terms.html" class="footer__link">Terms of Service</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Links</h4>
+            <a href="https://play.google.com/store/apps/details?id=com.elevenseconds.eleven_seconds" class="footer__link" target="_blank" rel="noopener">Google Play</a>
+            <a href="https://kombiverse.com" class="footer__link" target="_blank" rel="noopener">Kombiverse Labs</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Kombiverse Labs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
